@@ -17,8 +17,8 @@ include $_SERVER['DOCUMENT_ROOT'] . "/Mandigo/biblioperso/src/backend/views/insc
             <h2>Inscription</h2>
             <p>Inscrivez-vous en toute simplicité en enregistrant vos informations d'identification ci-dessous.</p>
             <div class="champ-saisi">
-                <input type="email" placeholder="Email ou nom d'utilisateur">
-                <input type="password" minlength="8" maxlength="20" placeholder="Mot de passe">
+                <input type="email" placeholder="Email ou nom d'utilisateur" required>
+                <input type="password" minlength="8" maxlength="20" placeholder="Mot de passe" required>
                 <button>Enregistrer</button>
             </div>
             <div class="saisi-option">

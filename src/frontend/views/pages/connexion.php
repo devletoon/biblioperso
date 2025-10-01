@@ -22,8 +22,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Mandigo/biblioperso/src/backend/views/conn
             <h2>Connexion</h2>
             <p>Connectez-vous en toute simplicité en saisissant vos informations d'identification ci-dessous.</p>
             <div class="champ-saisi">
-                <input type="email" placeholder="Email ou nom d'utilisateur">
-                <input type="password" minlength="8" maxlength="20" placeholder="Mot de passe">
+                <input type="email" placeholder="Email ou nom d'utilisateur" required>
+                <input type="password" minlength="8" maxlength="20" placeholder="Mot de passe" required>
                 <button>Se connecter</button>
             </div>
             <div class="saisi-option">

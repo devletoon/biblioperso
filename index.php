@@ -9,14 +9,14 @@
     <title>biblioperso</title> 
 </head>
 <body>
-    <head>
-        <div class="en-tete">
-            <a href="src/frontend/views/pages/connexion.php">Connexion</a>
-            <a href="#" target="_blank"><i class="fa-brands fa-x"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-discord"></i></a>
-        </div>
-    </head>
+    <header>
+        <nav>
+            <a href="/features/features.html" class="features">Features</a>
+            <a href="#" target="_blank" class="social-icons"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank" class="social-icons"><i class="fa-brands fa-x"></i></a>
+            <a href="#" target="_blank" class="social-icons"><i class="fa-brands fa-discord"></i></a>
+        </nav>
+    </header>
     <section class="home">
         <h2>biblioPerso</h2>
         <h1>Construsons ensemble l'avenir de la lecture pour tous</h1>

@@ -11,22 +11,65 @@
     }
 }
 
-.en-tete {
-    border: solid 1px black;
-    border-radius: 20px;
-    position: absolute;
-    left: 970px;
-    padding: 10px;
-    animation: fadeInUp 2s ease forwards;
+* {
+    font-family: 'Poppins', sans-serif; /* Application de la police Poppins */
 }
-.en-tete a {
-    justify-content: center;
-    text-decoration: none;
-    width: 5px; 
-    height: 5px; 
-    border-radius: 50%;
-    margin: 5px;
-    color:  grey;
+
+header {
+    margin-top: 20px;
+    width: 100%;
+    padding: 1rem 9%;
+    filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.1)); /* Ombre portée */
+    display: flex; 
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Alignement vertical des éléments */
+}
+header nav {
+    display: flex; /* Affichage en flexbox */
+    gap: 2rem; /* Espace entre les liens */
+    align-items: center; /* Alignement vertical des liens */
+    position: relative; /* Positionnement relatif pour les éléments enfants */
+    left: 40px; /* Alignement à droite */
+    bottom: 40px; /* Alignement vertical */
+}
+header nav a {
+    font-size: 1.5rem; /* Taille des liens */
+    cursor: pointer; /* Curseur en forme de main */
+    transition: 0.5s ease; /* Transition pour les effets */
+    color: black; /* Couleur des liens */
+}
+.social-icons {
+    align-items: center; /* Alignement vertical des icônes */
+    width:  3rem; /* Largeur des icônes */
+    height: 3rem; /* Hauteur des icônes */
+    transition: 0.3s ease; /* Transition pour les effets */
+    border: 2px solid rgb(177, 169, 169);/* Bordure noire */
+    border-radius: 50%; /* Bordure arrondie */
+    text-align: center;
+    padding-top: 0.3rem; /* Espacement interne */
+    padding-bottom: 1rem; /* Espacement interne */
+    color: rgb(177, 169, 169); /* Couleur du texte */
+}
+.social-icons :hover {
+    color: black; /* Couleur du texte au survol */
+    transform: scale(1.2); /* Agrandissement au survol */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.features {
+    align-items: center; /* Alignement vertical du lien Features */
+    width:  10rem; /* Largeur du lien Features */
+    height: 4rem; /* Hauteur du lien Features */
+    text-align: center;
+    padding-top: 0.6rem; /* Espacement interne */
+    position: relative; /* Positionnement relatif */
+    left: 20px; /* Alignement à droite */
+    top: 2px; /* Alignement vertical */
+    transition: 0.3s ease; /* Transition pour les effets */
+    color: rgb(177, 169, 169);
+}
+.features:hover {
+    border-radius: 30px; /* Bordure arrondie au survol */
+    color: black; /* Couleur du texte au survol */
 }
 
 
