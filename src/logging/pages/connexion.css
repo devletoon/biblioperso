@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.en-tete {
+    animation: fadeInUp 2s ease forwards;
+    border: solid 1px black;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    left: 1150px;
+    top: 20px;
+}
+.en-tete:hover {
+    background-color: black;
+}
+.en-tete a {
+    text-decoration: none;
+    color: grey;
+}
+.en-tete a:hover {
+    color: white;
+    background-color: black;
+}
+
+.logging-boc {
+    border: solid black;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    left: 480px;
+    top: 60px;
+    width: 340px;
+    animation: fadeInUp 2s ease forwards;
+}
+.logging-boc img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 5px;
+}
+.logging-boc h2 {
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+.logging-boc p {
+    text-align: center;
+    position: relative;
+    top: 5px;
+    font-size: 14px;
+    color: gray;
+}
+.champ-saisi {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15px;
+    gap: 15px;
+}
+.champ-saisi input {
+    height: 30px;
+    width: 250px;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding-left: 10px;
+    position: relative;
+    left: 40px;
+}
+.champ-saisi button {
+    height: 30px;
+    width: 260px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(11, 126, 202);
+    color: white;
+    font-size: 16px;
+    position: relative;
+    left: 43px;
+}
+.champ-saisi button:hover {
+    background-color: #2e458c;
+    cursor: pointer;
+}
+.saisi-option {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+    gap: 5px;
+    text-align: center;
+}
+.saisi-option a {
+    position: relative;
+    top: 2px;
+    text-decoration: none;
+    color: rgb(11, 126, 202);
+}
+.saisi-option a:hover {
+    text-decoration: underline;
+    color: #2e458c;
+    cursor: pointer;
+}
+.saisi-option p {
+    font-size: 14px;
+    color: gray;
+    position: relative;
+    top: -10px;
+    left: -70px;
+}
+#ccompte {
+    position: relative;
+    top: -46px;
+    left: 70px;
+}

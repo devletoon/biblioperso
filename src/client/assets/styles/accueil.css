@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.en-tete {
+    border: solid 1px black;
+    border-radius: 20px;
+    position: absolute;
+    left: 970px;
+    padding: 10px;
+    animation: fadeInUp 2s ease forwards;
+}
+.en-tete a {
+    justify-content: center;
+    text-decoration: none;
+    width: 5px; 
+    height: 5px; 
+    border-radius: 50%;
+    margin: 5px;
+    color:  grey;
+}
+
+
+.hone {
+    text-align: center;
+}
+.home h2 {
+    animation: fadeInUp 2s ease forwards;
+    position: absolute;
+    left: 550px;
+    top: 100px;
+}
+.home h1 {
+    animation: fadeInUp 2s ease forwards;
+    position: absolute;
+    top: 150px;
+    left: 250px;
+}
+.home p {
+    animation: fadeInUp 2s ease forwards;
+    position: absolute;
+    top: 220px;
+    left: 360px;
+}
+.home span {
+    animation: fadeInUp 2s ease forwards;
+    position: absolute;
+    top: 260px;
+    left: 330px; 
+}
