@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS biblioperso;
+USE biblioperso;
+CREATE TABLE IF NOT EXISTS compte(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(16) NOT NULL,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(20) NOT NULL
+);
