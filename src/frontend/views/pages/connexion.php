@@ -11,11 +11,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Mandigo/biblioperso/src/backend/views/conn
     <title>biblioperso</title>
 </head>
 <body>
-    <head>
+    <header>
         <div class="en-tete">
             <a href="/Mandigo/biblioperso/index.php">Accueil</a>
         </div>
-    </head>
+    </header>
     <section>
         <div class="logging-boc">
             <img src="/Mandigo/biblioperso/src/frontend/views/assets/imgs/OIP.webp" alt="" width="100" height="100">
@@ -24,7 +24,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Mandigo/biblioperso/src/backend/views/conn
             <div class="champ-saisi">
                 <input type="email" placeholder="Email ou nom d'utilisateur" required>
                 <input type="password" minlength="8" maxlength="20" placeholder="Mot de passe" required>
-                <button>Se connecter</button>
+                <button name="btn-connecter">Se connecter</button>
             </div>
             <div class="saisi-option">
                 <h5><a href="#">Mot de passe oublié ?</a></h5>

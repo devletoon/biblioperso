@@ -11,6 +11,11 @@ include $_SERVER['DOCUMENT_ROOT'] . "/Mandigo/biblioperso/src/backend/views/insc
     <title>biblioperso</title>
 </head>
 <body>
+    <header>
+        <div class="en-tete">
+            <a href="/Mandigo/biblioperso/index.php">Accueil</a>
+        </div>
+    </header>
     <section>
         <div class="logging-boc">
             <img src="/Mandigo/biblioperso/src/frontend/views/assets/imgs/OIP.webp" alt="" width="100" height="100">
@@ -19,7 +24,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/Mandigo/biblioperso/src/backend/views/insc
             <div class="champ-saisi">
                 <input type="email" placeholder="Email ou nom d'utilisateur" required>
                 <input type="password" minlength="8" maxlength="20" placeholder="Mot de passe" required>
-                <button>Enregistrer</button>
+                <button name="btn-inscrire">S'inscrire</button>
             </div>
             <div class="saisi-option">
                 <h5><a href="#">Besoin d'aide ?</a></h5>

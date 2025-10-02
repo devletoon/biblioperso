@@ -1,8 +1,23 @@
+/*CREATION ET INITIALISATION DE LA DB*/
 CREATE DATABASE IF NOT EXISTS biblioperso;
 USE biblioperso;
+
+/*CREATION DE LA TABLE DES COMPTES*/
 CREATE TABLE IF NOT EXISTS compte(
     id INT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(16) NOT NULL,
     email VARCHAR(50) NOT NULL UNIQUE,
     password VARCHAR(20) NOT NULL
 );
+
+/*INSCRIPTION*/
+INSERT INTO compte(
+    username, 
+    email, 
+    password) VALUES(
+        :username, 
+        :email, 
+        :password);
+
+/*CONNEXION*/
+SELECT * FROM compte;
