@@ -21,11 +21,14 @@ include $_SERVER['DOCUMENT_ROOT'] . "/Mandigo/biblioperso/src/backend/views/insc
             <img src="/Mandigo/biblioperso/src/frontend/views/assets/imgs/OIP.webp" alt="" width="100" height="100">
             <h2>Inscription</h2>
             <p>Inscrivez-vous en toute simplicité en enregistrant vos informations d'identification ci-dessous.</p>
+            <form  action="" method="POST">
             <div class="champ-saisi">
-                <input type="email" placeholder="Email ou nom d'utilisateur" required>
-                <input type="password" minlength="8" maxlength="20" placeholder="Mot de passe" required>
-                <button name="btn-inscrire">S'inscrire</button>
+                <input type="email" name="email" placeholder="Adresse Email" required>
+                <input type="text" name="username" minlength="5" maxlength="16" placeholder="Nom d'utilisateur" required>
+                <input type="password" minlength="8" maxlength="20" name="passwords" placeholder="Mot de passe" required>
+                <button name="btn-inscrire" type="submit">S'inscrire</button>
             </div>
+            </form>
             <div class="saisi-option">
                 <h5><a href="#">Besoin d'aide ?</a></h5>
                 <p>Vous avez un compte ?</p>
