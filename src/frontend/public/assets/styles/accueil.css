@@ -12,72 +12,81 @@
 }
 
 * {
-    font-family: 'Poppins', sans-serif; /* Application de la police Poppins */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif; 
 }
 
 header {
     margin-top: 20px;
     width: 100%;
     padding: 1rem 9%;
-    filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.1)); /* Ombre portée */
+    filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.1)); 
     display: flex; 
-    justify-content: space-between; /* Espace entre les éléments */
-    align-items: center; /* Alignement vertical des éléments */
+    justify-content: space-between;
+    align-items: center; 
+    border: solid 1px rgb(249, 2, 2);
 }
 header nav {
-    display: flex; /* Affichage en flexbox */
-    gap: 2rem; /* Espace entre les liens */
-    align-items: center; /* Alignement vertical des liens */
-    position: relative; /* Positionnement relatif pour les éléments enfants */
-    left: 40px; /* Alignement à droite */
-    bottom: 40px; /* Alignement vertical */
+    display: flex; 
+    gap: 2rem; 
+    align-items: center; 
+    border: solid 1px rgb(249, 2, 2);
 }
 header nav a {
-    font-size: 1.5rem; /* Taille des liens */
-    cursor: pointer; /* Curseur en forme de main */
-    transition: 0.5s ease; /* Transition pour les effets */
-    color: black; /* Couleur des liens */
+    font-size: 1.5rem; 
+    cursor: pointer; 
+    transition: 0.5s ease;
+    color: black; 
+    border: solid 1px rgb(249, 2, 2);
 }
 .social-icons {
-    align-items: center; /* Alignement vertical des icônes */
-    width:  3rem; /* Largeur des icônes */
-    height: 3rem; /* Hauteur des icônes */
-    transition: 0.3s ease; /* Transition pour les effets */
-    border: 2px solid rgb(177, 169, 169);/* Bordure noire */
-    border-radius: 50%; /* Bordure arrondie */
+    border: solid 1px rgb(249, 2, 2);
+    align-items: center; 
+    width:  3rem; 
+    height: 3rem;
+    transition: 0.3s ease; 
+    border: 2px solid rgb(177, 169, 169);
+    border-radius: 50%; 
     text-align: center;
-    padding-top: 0.3rem; /* Espacement interne */
-    padding-bottom: 1rem; /* Espacement interne */
-    color: rgb(177, 169, 169); /* Couleur du texte */
+    padding-top: 0.3rem; 
+    padding-bottom: 1rem; 
+    color: rgb(177, 169, 169); 
 }
-.social-icons :hover {
-    color: black; /* Couleur du texte au survol */
-    transform: scale(1.2); /* Agrandissement au survol */
+.social-icons:hover {
+    color: black; 
+    transform: scale(1.2); 
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
-.features {
-    align-items: center; /* Alignement vertical du lien Features */
-    width:  10rem; /* Largeur du lien Features */
-    height: 4rem; /* Hauteur du lien Features */
+.connexion {
+    align-items: center;
+    width:  10rem;
+    height: 4rem;
     text-align: center;
-    padding-top: 0.6rem; /* Espacement interne */
-    position: relative; /* Positionnement relatif */
-    left: 20px; /* Alignement à droite */
-    top: 2px; /* Alignement vertical */
-    transition: 0.3s ease; /* Transition pour les effets */
+    padding-top: 0.6rem; 
+    position: relative; 
+    left: 20px; 
+    top: 2px; 
+    transition: 0.3s ease; 
     color: rgb(177, 169, 169);
 }
-.features:hover {
-    border-radius: 30px; /* Bordure arrondie au survol */
-    color: black; /* Couleur du texte au survol */
+.connexion:hover {
+    border-radius: 30px; 
+    color: black; 
 }
 
-
+/* Section primcipale de l'accueil */
 .hone {
     text-align: center;
 }
 .home h2 {
     animation: fadeInUp 2s ease forwards;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 150;
     position: absolute;
     left: 550px;
     top: 100px;

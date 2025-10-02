@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav>
-            <a href="/features/features.html" class="features">Features</a>
+            <a href="src/frontend/views/pages/connexion.php" class="connexion">Connexion</a>
             <a href="#" target="_blank" class="social-icons"><i class="fa-brands fa-instagram"></i></a>
             <a href="#" target="_blank" class="social-icons"><i class="fa-brands fa-x"></i></a>
             <a href="#" target="_blank" class="social-icons"><i class="fa-brands fa-discord"></i></a>
