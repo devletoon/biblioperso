@@ -9,15 +9,3 @@ CREATE TABLE IF NOT EXISTS compte(
     email VARCHAR(50) NOT NULL UNIQUE,
     password VARCHAR(20) NOT NULL
 );
-
-/*INSCRIPTION*/
-INSERT INTO compte(
-    username, 
-    email, 
-    password) VALUES(
-        :username, 
-        :email, 
-        :password);
-
-/*CONNEXION*/
-SELECT * FROM compte;

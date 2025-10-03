@@ -18,7 +18,25 @@
 <center>
     <p><strong>Biblioperso</strong> est un projet développé en php avec l'accompagnement le language de balisage (html) et celui du stylisage (css) de manière génerale. L'utilisation du JavaScript est envisagé mais dois être fait avec une attention particulière á la structure du projet.</p>
     <li>
-        <ul>
-        </ul>
+        <ul>WampServer</ul>
+        <p>Vous aurez besoin d'un environnement complet, pour l'execution du code php. Pour cela nous utiliserons WampServer pour nous simplifier les choses.</p>
+        <ul>NodeJS</ul>
+        <p>Concernant l'utilisation de nodejs. Il sera implementé plus tard. Cependant il reste optionnel pour l'instant.</p>
     </li>
+</center>
+
+### License GPL3
+<center>
+    <p>La license que nous utilisons doit-être très fermemant respectée !</p>
+    <a href="/LICENCE" style="texte-decoration:none; color:red; text-align:center">Voire la license</a>
+</center>
+
+### Documentation Backend
+<center>
+
+</center>
+
+### Documentation Frontend
+<center>
+
 </center>
