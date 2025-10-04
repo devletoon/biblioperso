@@ -10,10 +10,10 @@ if (isset($_POST['btn-connecter'])) {
     $req->bindParam(":username", $username);
     $req->bindParam(":passwords", $passwords);
     $result=$req->execute();
-    $tabe=$req->fetch(PDO::FETCH_ASSOC); // Récupération des données sous forme de tableau associatif
+    $table=$req->fetch(PDO::FETCH_ASSOC); // Récupération des données sous forme de tableau associatif
 
     // Vérification de la similarité entre les données
-    if (($table['username']==$username) && ($table['passwords']==$passwords)){
+    if ($table){
         // Redirection sur le dashboard de l'utilisateur
         session_start();
         header('Location:http://localhost/Mandigo/biblioperso/src/frontend/public/pages/dashboard.php');
@@ -21,8 +21,8 @@ if (isset($_POST['btn-connecter'])) {
 
     }
     else {
+
         echo "<script type='text/javascript'>alert('Les informations que vous avez entrées ne sont pas correctes.');</script>";
-        exit();
     }
 };
 
