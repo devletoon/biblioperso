@@ -1,6 +1,5 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . '/Mandigo/biblioperso/src/backend/config/database.php';
-require 'inscription.php';
 
 if (isset($_POST['btn-connecter'])) {
     // Récuperation des informations nécessaires sous forme de table
@@ -9,11 +8,12 @@ if (isset($_POST['btn-connecter'])) {
     $req="SELECT username, passwords FROM compte WHERE username=:username AND passwords=:passwords";
     $req=$database->prepare("$req");
     $req->bindParam(":username", $username);
-    $req->bindParam(":username", $passwords);
+    $req->bindParam(":passwords", $passwords);
     $result=$req->execute();
+    $tabe=$req->fetch(PDO::FETCH_ASSOC); // Récupération des données sous forme de tableau associatif
 
     // Vérification de la similarité entre les données
-    if (($result['username']==$username) && ($result['passwords']==$passwords)){
+    if (($table['username']==$username) && ($table['passwords']==$passwords)){
         // Redirection sur le dashboard de l'utilisateur
         session_start();
         header('Location:http://localhost/Mandigo/biblioperso/src/frontend/public/pages/dashboard.php');
