@@ -203,3 +203,184 @@ header nav a {
     transform: scale(1.2); 
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 600px) {
+    header {
+        padding: 1rem 2%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    header nav {
+        position: static;
+        gap: 0.5rem;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .connexion {
+        left: 0;
+        top: 0;
+        width: 100%;
+        font-size: 14px;
+    }
+    .home h2 {
+        font-size: 1.3rem;
+        left: 50%;
+        top: 60px;
+        transform: translateX(-50%);
+        position: static;
+        margin-top: 60px;
+    }
+    .home h1 {
+        left: 50%;
+        top: 100px;
+        transform: translateX(-50%);
+        position: static;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .home p {
+        left: 50%;
+        top: 130px;
+        transform: translateX(-50%);
+        position: static;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    .home span {
+        left: 50%;
+        top: 150px;
+        transform: translateX(-50%);
+        position: static;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+    .premier-decorateur {
+        position: static;
+        width: 100%;
+        border-width: 1px;
+        margin-top: 20px;
+    }
+    .premier-decorateur .deco-un,
+    .premier-decorateur .deco-deux {
+        position: static;
+        width: 95vw;
+        left: 0;
+        top: 0;
+        margin: 0 auto 20px auto;
+    }
+    .premier-decorateur .deco-un img,
+    .premier-decorateur .deco-deux img {
+        width: 95vw;
+        height: auto;
+        min-width: 180px;
+        max-width: 350px;
+    }
+    .premier-decorateur .deco-un p,
+    .premier-decorateur .deco-deux p {
+        width: 95vw;
+        left: 0;
+        top: 0;
+        font-size: 1rem;
+        padding: 10px;
+        position: static;
+    }
+    .end-page {
+        width: 100vw;
+        left: 0;
+        top: auto;
+        position: static;
+        font-size: 12px;
+        padding: 5px;
+    }
+    .end-page .end-page-right {
+        left: 0;
+        top: 0;
+        position: static;
+        font-size: 10px;
+    }
+}
+
+/* Adaptation pour les très grands écrans */
+@media (min-width: 1600px) {
+    header {
+        padding: 1rem 15%;
+        font-size: 1.3rem;
+    }
+    header nav {
+        left: 1400px;
+        font-size: 1.2rem;
+    }
+    .connexion {
+        left: 80px;
+        top: 20px;
+        width: 12rem;
+        font-size: 1.2rem;
+    }
+    .home h2 {
+        font-size: 3.5rem;
+        left: 900px;
+        top: 120px;
+    }
+    .home h1 {
+        font-size: 2.2rem;
+        left: 600px;
+        top: 200px;
+    }
+    .home p {
+        font-size: 1.5rem;
+        left: 800px;
+        top: 260px;
+    }
+    .home span {
+        font-size: 1.2rem;
+        left: 780px;
+        top: 300px;
+    }
+    .premier-decorateur {
+        top: 500px;
+        border-width: 2px;
+    }
+    .premier-decorateur .deco-un {
+        width: 600px;
+        left: 400px;
+    }
+    .premier-decorateur .deco-un img {
+        width: 600px;
+        height: 400px;
+    }
+    .premier-decorateur .deco-un p {
+        font-size: 2.5rem;
+        left: 1100px;
+        top: 80px;
+        width: 600px;
+    }
+    .premier-decorateur .deco-deux {
+        width: 600px;
+        left: 1400px;
+        top: 700px;
+    }
+    .premier-decorateur .deco-deux img {
+        width: 600px;
+        height: 400px;
+    }
+    .premier-decorateur .deco-deux p {
+        font-size: 1.5rem;
+        left: -900px;
+        top: 20px;
+        width: 400px;
+    }
+    .end-page {
+        width: 1800px;
+        height: 70px;
+        top: 1600px;
+        font-size: 1.3rem;
+        padding: 20px;
+    }
+    .end-page .end-page-right {
+        left: 40px;
+        top: 20px;
+        font-size: 1.1rem;
+    }
+}

@@ -31,7 +31,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Mandigo/biblioperso/src/backend/views/conn
             <div class="saisi-option">
                 <h5><a href="#">Mot de passe oublié ?</a></h5>
                 <p>Vous n'avez pas de compte ?</p>
-                <a href="/Mandigo/biblioperso/src/frontend/views/pages/inscription.php" id="ccompte">Créer un compte</a>
+                <a href="http://localhost/Mandigo/biblioperso/src/frontend/views/pages/inscription.php" id="ccompte">Créer un compte</a>
             </div>
         </div>
     </section>

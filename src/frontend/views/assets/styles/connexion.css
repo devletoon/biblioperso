@@ -123,3 +123,75 @@
     top: -46px;
     left: 70px;
 }
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 600px) {
+    .en-tete {
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+        padding: 3px 6px;
+        font-size: 14px;
+    }
+    .logging-boc {
+        left: 50%;
+        top: 30px;
+        width: 95vw;
+        min-width: 220px;
+        max-width: 350px;
+        transform: translateX(-50%);
+        padding: 8px;
+    }
+    .champ-saisi input,
+    .champ-saisi button {
+        width: 90vw;
+        min-width: 180px;
+        max-width: 320px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .champ-saisi {
+        gap: 10px;
+    }
+    .saisi-option p {
+        left: 0;
+        font-size: 12px;
+    }
+    #ccompte {
+        left: 0;
+        top: -30px;
+    }
+}
+
+/* Adaptation pour les très grands écrans */
+@media (min-width: 1600px) {
+    .en-tete {
+        left: 1700px;
+        top: 30px;
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+    .logging-boc {
+        left: 900px;
+        top: 120px;
+        width: 500px;
+        padding: 20px;
+    }
+    .champ-saisi input,
+    .champ-saisi button {
+        width: 400px;
+        left: 50px;
+        font-size: 18px;
+    }
+    .champ-saisi {
+        gap: 25px;
+    }
+    .saisi-option p {
+        left: -100px;
+        font-size: 16px;
+    }
+    #ccompte {
+        left: 120px;
+        top: -60px;
+    }
+}
