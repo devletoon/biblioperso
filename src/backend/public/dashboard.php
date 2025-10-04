@@ -6,4 +6,9 @@ session_start();
 $_SESSION['']='';
 $_SESSION['']='';
 $_SESSION['']='';
+
+class dashboard {
+
+}
+
 ?>

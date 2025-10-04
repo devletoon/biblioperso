@@ -1,5 +1,6 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . '/Mandigo/biblioperso/src/backend/config/database.php';
+require 'connexion.php';
 
 if (isset($_POST['btn-inscrire'])) {
 

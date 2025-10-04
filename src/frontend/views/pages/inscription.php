@@ -6,7 +6,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/Mandigo/biblioperso/src/backend/views/insc
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/Mandigo/biblioperso/src/frontend/views/assets/icons/">
+    <link rel="icon" href="/Mandigo/biblioperso/src/frontend/views/assets/icons/icone.png">
 <link rel="stylesheet" href="/Mandigo/biblioperso/src/frontend/views/assets/styles/inscription.css">
     <title>biblioperso</title>
 </head>

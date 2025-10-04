@@ -6,7 +6,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Mandigo/biblioperso/src/backend/views/conn
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/Mandigo/biblioperso/src/frontend/views/assets/icons/">
+    <link rel="icon" href="/Mandigo/biblioperso/src/frontend/views/assets/icons/icone.png">
 <link rel="stylesheet" href="/Mandigo/biblioperso/src/frontend/views/assets/styles/connexion.css">
     <title>biblioperso</title>
 </head>
@@ -23,8 +23,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Mandigo/biblioperso/src/backend/views/conn
             <p>Connectez-vous en toute simplicité en saisissant vos informations d'identification ci-dessous.</p>
             <form  action="" method="POST">
             <div class="champ-saisi">
-                <input type="identifier" placeholder="Email ou nom d'utilisateur" required>
-                <input type="passwords" minlength="8" maxlength="20" placeholder="Mot de passe" required>
+                <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+                <input type="password" name="passwords" minlength="8" maxlength="20" placeholder="Mot de passe" required>
                 <button name="btn-connecter">Se connecter</button>
             </div>
             </form>

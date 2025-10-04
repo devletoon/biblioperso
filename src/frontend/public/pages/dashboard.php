@@ -7,7 +7,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/Mandigo/biblioperso/src/backend/public/das
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <limk rel="stylesheet" href="src/frontend/public/assets/styles/dashboard.css">
+    <link rel="icon" href="/Mandigo/biblioperso/src/frontend/views/assets/icons/icone.png">
+    <link rel="stylesheet" href="src/frontend/public/assets/styles/dashboard.css">
     <title>biblioperso</title>
 </head>
 <body>

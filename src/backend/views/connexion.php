@@ -1,22 +1,28 @@
 <?php
 include $_SERVER['DOCUMENT_ROOT'] . '/Mandigo/biblioperso/src/backend/config/database.php';
+require 'inscription.php';
 
 if (isset($_POST['btn-connecter'])) {
-    // Récuperation des informations nécessaires
-    $identifier=htmlspecialchars($_POST["identifier"]);
-    $passwords=htmlspecialchars($_POST["passwords"]);
-    $req="SELECT * FROM compte WHERE email='.$identifier.' OR username='.$identifier.' AND passwords='.$passwords.'";
-    $show_data=$database->prepare($req);
-    $execut=$show_data->execute();
-    $table=array($execut);
+    // Récuperation des informations nécessaires sous forme de table
+    $username=$_POST["username"];
+    $passwords=$_POST["passwords"];
+    $req="SELECT username, passwords FROM compte WHERE username=:username AND passwords=:passwords";
+    $req=$database->prepare("$req");
+    $req->bindParam(":username", $username);
+    $req->bindParam(":username", $passwords);
+    $result=$req->execute();
 
-    // Conditions de redirection
-    if ($result){
+    // Vérification de la similarité entre les données
+    if (($result['username']==$username) && ($result['passwords']==$passwords)){
+        // Redirection sur le dashboard de l'utilisateur
+        session_start();
         header('Location:http://localhost/Mandigo/biblioperso/src/frontend/public/pages/dashboard.php');
         exit();
+
     }
     else {
         echo "<script type='text/javascript'>alert('Les informations que vous avez entrées ne sont pas correctes.');</script>";
+        exit();
     }
 };
 

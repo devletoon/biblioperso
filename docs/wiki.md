@@ -31,12 +31,7 @@
     <a href="/LICENCE" style="texte-decoration:none; color:red; text-align:center">Voire la license</a>
 </center>
 
-### Documentation Backend
-<center>
-
-</center>
-
-### Documentation Frontend
+### Documentation (Que le backend)
 <center>
 
 </center>
